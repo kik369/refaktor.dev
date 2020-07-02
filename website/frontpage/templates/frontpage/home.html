@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>{% load static %}
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -12,7 +12,33 @@
     <title>refaktor.dev</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <style>
+        .bgdiv {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            background: #00B4DB;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top, #0083B0, #00B4DB);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top, #0083B0, #00B4DB);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 
 <body>
@@ -20,8 +46,14 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <p>🍰</p>
-    <p>🔥</p>
+    <div class="bgdiv"></div>
+    <div style="width: 100vw; background-color: antiquewhite; text-align: center;">
+        <div class="center">
+            <img src="{% static 'frontpage/images/undraw_coding_6mjf.svg' %}" style="width: 75%;">
+        </div>
+
+    </div>
+
 </body>
 
 </html>
