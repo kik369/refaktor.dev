@@ -21,4 +21,5 @@ app_name = 'frontpage'
 urlpatterns = [
     path('', views.HomeView.as_view(), name='home'),
     path('robots.txt', views.robots, name='robots'),
+    path('sitemap.xml', views.SitemapView.as_view(), name='sitemap'),
 ]

@@ -6,5 +6,9 @@ class HomeView(generic.TemplateView):
 
 
 def robots(request):
-    response = HttpResponse('User-agent: *', content_type='text/plain')
+    response = HttpResponse('User-agent: *\nSitemap: http://refaktor.dev/sitemap.xml', content_type='text/plain')
     return response
+
+
+class SitemapView(generic.TemplateView):
+    template_name = 'frontpage/sitemap.xml'
