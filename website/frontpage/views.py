@@ -8,7 +8,7 @@ class HomeView(generic.TemplateView):
 
 def robots(request):
     response = HttpResponse(
-        'User-agent: *\nSitemap: http://refaktor.dev/sitemap.xml', content_type='text/plain')
+        'User-agent: *\nSitemap: https://refaktor.dev/sitemap.xml', content_type='text/plain')
     return response
 
 
