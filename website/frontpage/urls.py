@@ -20,6 +20,8 @@ app_name = 'frontpage'
 
 urlpatterns = [
     path('', views.HomeView.as_view(), name='home'),
+    path('password', views.PasswordView.as_view(), name='password'),
+    path('quadratic', views.QuadraticView.as_view(), name='quadratic'),
     path('robots.txt', views.robots, name='robots'),
     path('sitemap.xml', views.SitemapView.as_view(), name='sitemap'),
 ]

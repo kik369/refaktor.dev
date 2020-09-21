@@ -1,0 +1,54 @@
+<!DOCTYPE html>{% load static %}
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152031613-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-152031613-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Web App development with Django and Python. Building SEO optimizes websites for businesses. Logo design, branding.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>refaktor.dev 🔥 👋</title>
+    <link rel="canonical" href="https://refaktor.dev/">
+    <link rel="stylesheet" href="{% static 'frontpage/style.css' %}">
+    <link rel="stylesheet" href="{% static 'frontpage/mystyle.css' %}">
+</head>
+
+<body>
+    <h1>Quadratic Equation Solver</h1>
+    <canvas id="myChart"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels: [-2.5, -1.33, -0.17],
+                datasets: [{
+                    label: 'My First dataset',
+                    // backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [0, -16.33, 0]
+                }]
+            },
+
+            // Configuration options go here
+            options: {}
+        });
+    </script>
+</body>
+
+</html>
