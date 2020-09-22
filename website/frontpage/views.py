@@ -10,6 +10,10 @@ class PasswordView(generic.TemplateView):
     template_name = 'frontpage/password.html'
 
 
+class ClockView(generic.TemplateView):
+    template_name = 'frontpage/clock.html'
+
+
 class QuadraticView(generic.TemplateView):
     template_name = 'frontpage/quadratic.html'
 

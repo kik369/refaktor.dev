@@ -14,15 +14,15 @@
 
         gtag('config', 'UA-152031613-1');
     </script>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Web App development with Django and Python. Building SEO optimizes websites for businesses. Logo design, branding.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>refaktor.dev 🔥 👋</title>
     <link rel="icon" href="{% static 'frontpage/icons/refaktor.svg' %}" sizes="any" type="image/svg+xml">
     <link rel="canonical" href="https://refaktor.dev/">
     <link rel="stylesheet" href="{% static 'frontpage/style.css' %}">
     <link rel="stylesheet" href="{% static 'frontpage/mystyle.css' %}">
+    <title>refaktor.dev 👋</title>
 </head>
 
 <body>
@@ -83,6 +83,23 @@
                             <div class="level-right">
                                 <div class="level-item">
                                     <a href="{% url 'frontpage:password' %}" class="has-text-white" rel="password generator">password generator</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-narrow">
+                        <div class="level">
+                            <div class="level-left">
+                                <div class="level-item mr-1">
+                                    <span class="icon">
+                                        {% icon "clock" %}
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="level-right">
+                                <div class="level-item">
+                                    <a href="{% url 'frontpage:clock' %}" class="has-text-white" rel="password generator">JS clock with dynamic background gradient</a>
                                 </div>
                             </div>
                         </div>
