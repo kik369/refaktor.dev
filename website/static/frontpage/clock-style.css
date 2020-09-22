@@ -6,7 +6,7 @@ body {
 
 .clock-container {
     color: ghostwhite;
-    font-size: x-large;
+    font-size: large;
     text-align: center;
     position: absolute;
     top: 50%;
