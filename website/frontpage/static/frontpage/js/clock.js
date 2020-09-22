@@ -14,5 +14,5 @@ setInterval(() => {
     let minute = addZero(now.getMinutes())
     let second = addZero(now.getSeconds())
     body.style.backgroundImage = `linear-gradient(45deg, #${hour}${minute}${second}, #${second}${minute}${hour})`
-    clock.innerHTML = `${hour} : ${minute} : ${second}`
+    clock.innerHTML = `${hour}:${minute}:${second}`
 }, 1000);
