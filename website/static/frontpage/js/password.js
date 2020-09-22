@@ -52,5 +52,5 @@ form.addEventListener('submit', (e) => {
 // copy password
 clickToCopy.addEventListener('click', (e) => {
     navigator.clipboard.writeText(e.target.innerText)
-    M.toast({ html: 'Password copied!' })
+    M.toast({ html: '<i class="material-icons teal-text">content_copy</i><span style="margin-left:7px">Password copied!</span>' })
 })
