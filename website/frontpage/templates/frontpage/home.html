@@ -1,114 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-{% load static %}{% load icon %}
-<head>
+  {% load static %}{% load icon %}
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152031613-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-152031613-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-152031613-1');
+      gtag("config", "UA-152031613-1");
     </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Web App development with Django and Python. Building SEO optimizes websites for businesses. Logo design, branding.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="{% static 'frontpage/icons/refaktor.svg' %}" sizes="any" type="image/svg+xml">
-    <link rel="canonical" href="https://refaktor.dev/">
-    <link rel="stylesheet" href="{% static 'frontpage/style.css' %}">
-    <link rel="stylesheet" href="{% static 'frontpage/mystyle.css' %}">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Web App development with Django and Python. Building SEO optimizes websites for businesses. Logo design, branding."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="{% static 'frontpage/icons/refaktor.svg' %}"
+      sizes="any"
+      type="image/svg+xml"
+    />
+    <link rel="canonical" href="https://refaktor.dev/" />
+    <link rel="stylesheet" href="{% static 'frontpage/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'frontpage/mystyle.css' %}" />
     <title>refaktor.dev 👋</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="hero is-link is-fullheight">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title is-1 rd-900">
-                    refaktor.dev
-                </h1>
-                <p class="subtitle is-3">
-                    Web development • Python • Django • JavaScript
-                </p>
-                <div class="columns">
-                
-                    <div class="column is-narrow">
-                        <div class="level">
-                            <div class="level-left">
-                                <div class="level-item mr-1">
-                                    <span class="icon">
-                                        {% icon "github" %}
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="level-right">
-                                <div class="level-item">
-                                    <a href="https://github.com/kik369" class="has-text-white" target="_blank" rel="github">github</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column is-narrow">
-                        <div class="level">
-                            <div class="level-left">
-                                <div class="level-item mr-1">
-                                    <span class="icon">
-                                        {% icon "mail" %}
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="level-right">
-                                <div class="level-item">
-                                    <a href="mailto:kris@refaktor.dev" class="has-text-white" target="_blank">email</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column is-narrow">
-                        <div class="level">
-                            <div class="level-left">
-                                <div class="level-item mr-1">
-                                    <span class="icon">
-                                        {% icon "key" %}
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="level-right">
-                                <div class="level-item">
-                                    <a href="{% url 'frontpage:password' %}" class="has-text-white" rel="password generator">password generator</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column is-narrow">
-                        <div class="level">
-                            <div class="level-left">
-                                <div class="level-item mr-1">
-                                    <span class="icon">
-                                        {% icon "clock" %}
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="level-right">
-                                <div class="level-item">
-                                    <a href="{% url 'frontpage:clock' %}" class="has-text-white" rel="password generator">JS clock with dynamic background gradient</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1 rd-900">refaktor.dev</h1>
+          <p class="subtitle is-3">
+            Web development • Python • Django • JavaScript
+          </p>
+          <div class="columns">
+            <div class="column is-narrow">
+              <div class="level">
+                <div class="level-left">
+                  <div class="level-item mr-1">
+                    <span class="icon"> {% icon "github" %} </span>
+                  </div>
                 </div>
+                <div class="level-right">
+                  <div class="level-item">
+                    <a
+                      href="https://github.com/kik369"
+                      class="has-text-white"
+                      target="_blank"
+                      rel="github"
+                      >github</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
-</body>
 
+            <div class="column is-narrow">
+              <div class="level">
+                <div class="level-left">
+                  <div class="level-item mr-1">
+                    <span class="icon"> {% icon "mail" %} </span>
+                  </div>
+                </div>
+                <div class="level-right">
+                  <div class="level-item">
+                    <a
+                      href="mailto:kris@refaktor.dev"
+                      class="has-text-white"
+                      target="_blank"
+                      >email</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-narrow">
+              <div class="level">
+                <div class="level-left">
+                  <div class="level-item mr-1">
+                    <span class="icon"> {% icon "key" %} </span>
+                  </div>
+                </div>
+                <div class="level-right">
+                  <div class="level-item">
+                    <a
+                      href="{% url 'frontpage:password' %}"
+                      class="has-text-white"
+                      rel="password generator"
+                      >password generator</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-narrow">
+              <div class="level">
+                <div class="level-left">
+                  <div class="level-item mr-1">
+                    <span class="icon"> {% icon "clock" %} </span>
+                  </div>
+                </div>
+                <div class="level-right">
+                  <div class="level-item">
+                    <a
+                      href="{% url 'frontpage:clock' %}"
+                      class="has-text-white"
+                      rel="password generator"
+                      >js clock with dynamic background gradient</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-narrow">
+              <div class="level">
+                <div class="level-left">
+                  <div class="level-item mr-1">
+                    <span class="icon"> {% icon "edit-2" %} </span>
+                  </div>
+                </div>
+                <div class="level-right">
+                  <div class="level-item">
+                    <a
+                      href="{% url 'frontpage:quadratic' %}"
+                      class="has-text-white"
+                      rel="password generator"
+                      >quadratic equation solver</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
