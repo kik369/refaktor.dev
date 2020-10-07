@@ -1,27 +1,23 @@
-<!DOCTYPE html>
+<!DOCTYPE html>{% load static %}
 <html lang="en">
-  {% load static %}
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-152031613-1"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152031613-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
 
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "UA-152031613-1");
+      gtag('config', 'UA-152031613-1');
     </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
-      content="Digital clock made in JavaScript that changes the background of the page."
+      content="Digital clock made in JavaScript that changes the background of the page. Web App development with Django and Python. Building SEO optimizes websites for businesses. Logo design, branding."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -39,14 +35,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="{% static 'frontpage/clock-style.css' %}" />
-    <title>
-      JavaScript clock that changes page background gradient • refaktor.dev 👋
-    </title>
+    <title>JavaScript clock that changes page background gradient • refaktor.dev 👋</title>
   </head>
 
   <body>

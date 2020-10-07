@@ -1,63 +1,75 @@
 <!DOCTYPE html>{% load static %}
 <html lang="en">
-
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152031613-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-        gtag('config', 'UA-152031613-1');
+      gtag('config', 'UA-152031613-1');
     </script>
-    <link rel="canonical" href="https://refaktor.dev/">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>refaktor.dev 🔥 👋</title>
-    <meta name="description" content="Web App development with Django and Python. Building SEO optimizes websites for businesses. Logo design, branding.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Web App development with Django and Python. Building SEO optimizes websites for businesses. Logo design, branding."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="{% static 'frontpage/icons/refaktor.svg' %}"
+      sizes="any"
+      type="image/svg+xml"
+    />
+    <link rel="canonical" href="https://refaktor.dev/" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        .bgdiv {
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-            background: #00B4DB;
-            /* fallback for old browsers */
-            background: -webkit-linear-gradient(to top, #0083B0, #00B4DB);
-            /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to top, #0083B0, #00B4DB);
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            background-position: center center;
-            background-size: cover;
-        }
-        
-        .center {
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
+      .bgdiv {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background: #00b4db;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #0083b0, #00b4db);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #0083b0, #00b4db);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-position: center center;
+        background-size: cover;
+      }
+
+      .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
     </style>
-</head>
+    <title>404 😦 • refaktor.dev 👋</title>
+  </head>
 
-<body>
+  <body>
     <div class="bgdiv"></div>
-    <div style="width: 100vw; text-align: center;">
-        <div class="center">
-            <img src="{% static 'frontpage/images/warning.svg' %}" alt="404" style="width: 75%;">
-            <h1 style="font-family: 'Playfair Display', serif; font-size: 100px; color: #0083B0;">refaktor.dev</h1>
-        </div>
+    <div style="width: 100vw; text-align: center">
+      <div class="center">
+        <img src="{% static 'frontpage/images/warning.svg' %}" alt="404" style="width: 75%" />
+        <h1 style="font-family: 'Playfair Display', serif; font-size: 100px; color: #0083b0">
+          refaktor.dev
+        </h1>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

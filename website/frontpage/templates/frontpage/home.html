@@ -1,21 +1,17 @@
-<!DOCTYPE html>
+<!DOCTYPE html>{% load static %}{% load icon %}
 <html lang="en">
-  {% load static %}{% load icon %}
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-152031613-1"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152031613-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
 
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "UA-152031613-1");
+      gtag('config', 'UA-152031613-1');
     </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,7 +19,7 @@
       name="description"
       content="Web App development with Django and Python. Building SEO optimizes websites for businesses. Logo design, branding."
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
       href="{% static 'frontpage/icons/refaktor.svg' %}"
@@ -41,9 +37,7 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title is-1 rd-900">refaktor.dev</h1>
-          <p class="subtitle is-3">
-            Web development • Python • Django • JavaScript
-          </p>
+          <p class="subtitle is-3">Web development • Python • Django • JavaScript</p>
           <div class="columns">
             <div class="column is-narrow">
               <div class="level">
@@ -75,10 +69,7 @@
                 </div>
                 <div class="level-right">
                   <div class="level-item">
-                    <a
-                      href="mailto:kris@refaktor.dev"
-                      class="has-text-white"
-                      target="_blank"
+                    <a href="mailto:kris@refaktor.dev" class="has-text-white" target="_blank"
                       >email</a
                     >
                   </div>
