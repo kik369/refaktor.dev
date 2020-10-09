@@ -38,20 +38,17 @@
       integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="{% static 'frontpage/mystyle.css' %}" />
     <link rel="stylesheet" href="{% static 'frontpage/quadratic-style.css' %}" />
     <title>Quadratic Equation Solver • refaktor.dev 👋</title>
   </head>
 
   <body>
+    <a class="btn-floating btn-large home-icon" href="{% url 'frontpage:home' %}"
+      ><i class="material-icons">home</i></a
+    >
     <div class="container">
       <div class="valign-wrapper">
-        <div>
-          <h3>
-            <a href="{% url 'frontpage:home' %}" class="teal-text"
-              ><i class="medium material-icons">home</i></a
-            >
-          </h3>
-        </div>
         <div>
           <h3>Quadratic Equation Solver</h3>
         </div>
