@@ -1,293 +1,317 @@
 <!DOCTYPE html>{% load static %}{% load icon %}
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152031613-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152031613-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-      gtag('config', 'UA-152031613-1');
-    </script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Web App development with Django and Python. Building SEO optimizes websites for businesses. Logo design, branding."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      href="{% static 'frontpage/icons/refaktor.svg' %}"
-      sizes="any"
-      type="image/svg+xml"
-    />
-    <link rel="canonical" href="https://refaktor.dev/" />
-    <link rel="stylesheet" href="{% static 'frontpage/style.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'frontpage/mystyle.css' %}" />
-    <title>refaktor.dev 👋</title>
-  </head>
+            gtag('config', 'UA-152031613-1');
+        </script>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="description"
+            content="Web App development with Django and Python. Building SEO optimizes websites for businesses. Logo design, branding."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            href="{% static 'frontpage/icons/refaktor.svg' %}"
+            sizes="any"
+            type="image/svg+xml"
+        />
+        <link rel="canonical" href="https://refaktor.dev/" />
+        <link rel="stylesheet" href="{% static 'frontpage/style.min.css' %}" />
+        <link rel="stylesheet" href="{% static 'frontpage/mystyle.css' %}" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="{% static 'frontpage/fonts/Lato-Regular.ttf' %}" rel="stylesheet" />
+        <title>refaktor.dev 👋</title>
+    </head>
 
-  <body>
-    <section class="hero is-link is-fullheight">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title is-1 rd-900">refaktor.dev</h1>
-          <p class="subtitle is-3 mb-6">Web development • Python • Django • JavaScript</p>
+    <body>
+        <section class="hero is-link is-fullheight">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title is-1 rd-900">refaktor.dev</h1>
+                    <p class="subtitle is-3 mb-6">Web development • Python • Django • JavaScript</p>
 
-          <div class="columns mb-5">
-            <div class="column is-narrow">
-              <div class="level">
-                <div class="level-left">
-                  <div class="level-item mr-3">
-                    <span class="icon"> {% icon "github" %} </span>
-                  </div>
+                    <div class="columns mb-5">
+                        <div class="column is-narrow">
+                            <div class="level">
+                                <div class="level-left">
+                                    <div class="level-item mr-3">
+                                        <span class="icon"> {% icon "github" %} </span>
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <a
+                                            href="https://github.com/kik369"
+                                            class="has-text-white"
+                                            target="_blank"
+                                            rel="github"
+                                            >GitHub</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column is-narrow">
+                            <div class="level">
+                                <div class="level-left">
+                                    <div class="level-item mr-3">
+                                        <span class="icon"> {% icon "cloud-lightning" %} </span>
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <a
+                                            href="https://tryhackme.com/p/kik369"
+                                            class="has-text-white"
+                                            target="_blank"
+                                            rel="github"
+                                            >TryHackMe</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column is-narrow">
+                            <div class="level">
+                                <div class="level-left">
+                                    <div class="level-item mr-3">
+                                        <span class="icon"> {% icon "mail" %} </span>
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <a
+                                            href="mailto:kris@refaktor.dev"
+                                            class="has-text-white"
+                                            target="_blank"
+                                            >Email</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="is-size-5 mb-3">Some of the stuff that I've done</p>
+                    <div class="columns">
+                        <div class="column is-narrow">
+                            <div class="level">
+                                <div class="level-left">
+                                    <div class="level-item mr-3">
+                                        <span class="icon"> {% icon "key" %} </span>
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <a
+                                            href="{% url 'frontpage:password' %}"
+                                            class="has-text-white"
+                                            rel="password generator"
+                                            >Password generator</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column is-narrow">
+                            <div class="level">
+                                <div class="level-left">
+                                    <div class="level-item mr-3">
+                                        <span class="icon"> {% icon "clock" %} </span>
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <a
+                                            href="{% url 'frontpage:clock' %}"
+                                            class="has-text-white"
+                                            rel="password generator"
+                                            >JS clock with dynamic background gradient</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column is-narrow">
+                            <div class="level">
+                                <div class="level-left">
+                                    <div class="level-item mr-3">
+                                        <span class="icon"> {% icon "edit-2" %} </span>
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <a
+                                            href="{% url 'frontpage:quadratic' %}"
+                                            class="has-text-white"
+                                            rel="password generator"
+                                            >Quadratic equation solver</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column is-narrow">
+                            <div class="level">
+                                <div class="level-left">
+                                    <div class="level-item mr-3">
+                                        <span class="icon"> {% icon "truck" %} </span>
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <a
+                                            href="https://wemovemountains.co.uk/"
+                                            class="has-text-white"
+                                            rel="password generator"
+                                            >Moving Mountains</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="level-right">
-                  <div class="level-item">
-                    <a
-                      href="https://github.com/kik369"
-                      class="has-text-white"
-                      target="_blank"
-                      rel="github"
-                      >GitHub</a
-                    >
-                  </div>
-                </div>
-              </div>
             </div>
 
-            <div class="column is-narrow">
-              <div class="level">
-                <div class="level-left">
-                  <div class="level-item mr-3">
-                    <span class="icon"> {% icon "cloud-lightning" %} </span>
-                  </div>
+            <div class="hero-foot pb-5">
+                <div class="columns is-vcentered">
+                    <div class="column"></div>
+                    <div class="column is-narrow">
+                        <p class="is-size-5 mb-3">Tech stack</p>
+                    </div>
+                    <div class="column"></div>
                 </div>
-                <div class="level-right">
-                  <div class="level-item">
-                    <a
-                      href="https://tryhackme.com/p/kik369"
-                      class="has-text-white"
-                      target="_blank"
-                      rel="github"
-                      >TryHackMe</a
-                    >
-                  </div>
+                <div class="columns is-vcentered">
+                    <div class="column"></div>
+                    <div class="column is-narrow">
+                        <figure class="image is-64x64">
+                            <img src="{% static 'frontpage/images/html-5.svg' %}" alt="html" />
+                        </figure>
+                    </div>
+                    <div class="column is-narrow">
+                        <figure class="image is-64x64">
+                            <img src="{% static 'frontpage/images/css-3.svg' %}" alt="css" />
+                        </figure>
+                    </div>
+                    <div class="column is-narrow">
+                        <figure class="image is-64x64">
+                            <img src="{% static 'frontpage/images/scss.png' %}" alt="scss" />
+                        </figure>
+                    </div>
+                    <div class="column is-narrow">
+                        <figure class="image is-64x64">
+                            <img
+                                src="{% static 'frontpage/images/JavaScript.svg' %}"
+                                alt="javascript"
+                            />
+                        </figure>
+                    </div>
+                    <div class="column is-narrow">
+                        <figure class="image is-64x64">
+                            <img src="{% static 'frontpage/images/python.svg' %}" alt="python" />
+                        </figure>
+                    </div>
+                    <div class="column is-narrow is-vcentered">
+                        <img
+                            src="{% static 'frontpage/images/django-logo-positive.svg' %}"
+                            alt="django"
+                            width="183"
+                            height="64"
+                        />
+                    </div>
+                    <div class="column is-narrow">
+                        <figure class="image is-64x64">
+                            <img
+                                src="{% static 'frontpage/images/github-logo.svg' %}"
+                                alt="github"
+                            />
+                        </figure>
+                    </div>
+                    <div class="column is-narrow">
+                        <figure class="image is-64x64">
+                            <img
+                                src="{% static 'frontpage/images/linux-penguin.svg' %}"
+                                alt="linux"
+                            />
+                        </figure>
+                    </div>
+                    <div class="column is-narrow">
+                        <figure class="image is-64x64">
+                            <img
+                                src="{% static 'frontpage/images/DO_Logo_icon_black.svg' %}"
+                                alt="digitalocean"
+                            />
+                        </figure>
+                    </div>
+                    <div class="column is-narrow">
+                        <figure class="image is-64x64">
+                            <img
+                                src="{% static 'frontpage/images/logomark-light.svg' %}"
+                                alt="netlify"
+                            />
+                        </figure>
+                    </div>
+                    <div class="column is-narrow">
+                        <figure class="image is-64x64">
+                            <img
+                                src="{% static 'frontpage/images/affinity-designer.svg' %}"
+                                alt="affinity designer"
+                            />
+                        </figure>
+                    </div>
+                    <div class="column is-narrow">
+                        <figure class="image is-64x64">
+                            <img src="{% static 'frontpage/images/figma.png' %}" alt="figma" />
+                        </figure>
+                    </div>
+                    <div class="column is-narrow">
+                        <figure class="image is-64x64">
+                            <img
+                                src="{% static 'frontpage/images/adobe-xd.svg' %}"
+                                alt="adobe xd"
+                            />
+                        </figure>
+                    </div>
+                    <div class="column is-narrow">
+                        <figure class="image is-64x64">
+                            <img src="{% static 'frontpage/images/paypal.svg' %}" alt="paypal" />
+                        </figure>
+                    </div>
+                    <div class="column is-narrow">
+                        <figure class="image is-64x64">
+                            <img
+                                src="{% static 'frontpage/images/integromat.png' %}"
+                                alt="integromat"
+                            />
+                        </figure>
+                    </div>
+                    <div class="column"></div>
                 </div>
-              </div>
             </div>
-
-            <div class="column is-narrow">
-              <div class="level">
-                <div class="level-left">
-                  <div class="level-item mr-3">
-                    <span class="icon"> {% icon "mail" %} </span>
-                  </div>
-                </div>
-                <div class="level-right">
-                  <div class="level-item">
-                    <a href="mailto:kris@refaktor.dev" class="has-text-white" target="_blank"
-                      >Email</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <p class="is-size-5 mb-3">Some of the stuff that I've done</p>
-          <div class="columns">
-            <div class="column is-narrow">
-              <div class="level">
-                <div class="level-left">
-                  <div class="level-item mr-3">
-                    <span class="icon"> {% icon "key" %} </span>
-                  </div>
-                </div>
-                <div class="level-right">
-                  <div class="level-item">
-                    <a
-                      href="{% url 'frontpage:password' %}"
-                      class="has-text-white"
-                      rel="password generator"
-                      >Password generator</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="columns">
-            <div class="column is-narrow">
-              <div class="level">
-                <div class="level-left">
-                  <div class="level-item mr-3">
-                    <span class="icon"> {% icon "clock" %} </span>
-                  </div>
-                </div>
-                <div class="level-right">
-                  <div class="level-item">
-                    <a
-                      href="{% url 'frontpage:clock' %}"
-                      class="has-text-white"
-                      rel="password generator"
-                      >JS clock with dynamic background gradient</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="columns">
-            <div class="column is-narrow">
-              <div class="level">
-                <div class="level-left">
-                  <div class="level-item mr-3">
-                    <span class="icon"> {% icon "edit-2" %} </span>
-                  </div>
-                </div>
-                <div class="level-right">
-                  <div class="level-item">
-                    <a
-                      href="{% url 'frontpage:quadratic' %}"
-                      class="has-text-white"
-                      rel="password generator"
-                      >Quadratic equation solver</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="columns">
-            <div class="column is-narrow">
-              <div class="level">
-                <div class="level-left">
-                  <div class="level-item mr-3">
-                    <span class="icon"> {% icon "truck" %} </span>
-                  </div>
-                </div>
-                <div class="level-right">
-                  <div class="level-item">
-                    <a
-                      href="https://wemovemountains.co.uk/"
-                      class="has-text-white"
-                      rel="password generator"
-                      >Moving Mountains</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-foot pb-5">
-        <div class="columns is-vcentered">
-          <div class="column"></div>
-          <div class="column is-narrow">
-            <p class="is-size-5 mb-3">Tech stack</p>
-          </div>
-          <div class="column"></div>
-        </div>
-        <div class="columns is-vcentered">
-          <div class="column"></div>
-          <div class="column is-narrow">
-            <figure class="image is-64x64">
-              <img src="{% static 'frontpage/images/html-5.svg' %}" alt="html" />
-            </figure>
-          </div>
-          <div class="column is-narrow">
-            <figure class="image is-64x64">
-              <img src="{% static 'frontpage/images/css-3.svg' %}" alt="css" />
-            </figure>
-          </div>
-          <div class="column is-narrow">
-            <figure class="image is-64x64">
-              <img src="{% static 'frontpage/images/scss.png' %}" alt="scss" />
-            </figure>
-          </div>
-          <div class="column is-narrow">
-            <figure class="image is-64x64">
-              <img src="{% static 'frontpage/images/JavaScript.svg' %}" alt="javascript" />
-            </figure>
-          </div>
-          <div class="column is-narrow">
-            <figure class="image is-64x64">
-              <img src="{% static 'frontpage/images/python.svg' %}" alt="python" />
-            </figure>
-          </div>
-          <div class="column is-narrow is-vcentered">
-            <img
-              src="{% static 'frontpage/images/django-logo-positive.svg' %}"
-              alt="django"
-              width="183"
-              height="64"
-            />
-          </div>
-          <div class="column is-narrow">
-            <figure class="image is-64x64">
-              <img src="{% static 'frontpage/images/github-logo.svg' %}" alt="github" />
-            </figure>
-          </div>
-          <div class="column is-narrow">
-            <figure class="image is-64x64">
-              <img src="{% static 'frontpage/images/linux-penguin.svg' %}" alt="linux" />
-            </figure>
-          </div>
-          <div class="column is-narrow">
-            <figure class="image is-64x64">
-              <img
-                src="{% static 'frontpage/images/DO_Logo_icon_black.svg' %}"
-                alt="digitalocean"
-              />
-            </figure>
-          </div>
-          <div class="column is-narrow">
-            <figure class="image is-64x64">
-              <img src="{% static 'frontpage/images/logomark-light.svg' %}" alt="netlify" />
-            </figure>
-          </div>
-          <div class="column is-narrow">
-            <figure class="image is-64x64">
-              <img
-                src="{% static 'frontpage/images/affinity-designer.svg' %}"
-                alt="affinity designer"
-              />
-            </figure>
-          </div>
-          <div class="column is-narrow">
-            <figure class="image is-64x64">
-              <img src="{% static 'frontpage/images/figma.png' %}" alt="figma" />
-            </figure>
-          </div>
-          <div class="column is-narrow">
-            <figure class="image is-64x64">
-              <img src="{% static 'frontpage/images/adobe-xd.svg' %}" alt="adobe xd" />
-            </figure>
-          </div>
-          <div class="column is-narrow">
-            <figure class="image is-64x64">
-              <img src="{% static 'frontpage/images/paypal.svg' %}" alt="paypal" />
-            </figure>
-          </div>
-          <div class="column is-narrow">
-            <figure class="image is-64x64">
-              <img src="{% static 'frontpage/images/integromat.png' %}" alt="integromat" />
-            </figure>
-          </div>
-          <div class="column"></div>
-        </div>
-      </div>
-    </section>
-  </body>
+        </section>
+    </body>
 </html>
