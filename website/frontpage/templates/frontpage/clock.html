@@ -1,56 +1,56 @@
 <!DOCTYPE html>{% load static %}
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152031613-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152031613-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-      gtag('config', 'UA-152031613-1');
-    </script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Digital clock made in JavaScript that changes the background of the page. Web App development with Django and Python."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      href="{% static 'frontpage/icons/refaktor.svg' %}"
-      sizes="any"
-      type="image/svg+xml"
-    />
-    <link rel="canonical" href="https://refaktor.dev/" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="{% static 'frontpage/mystyle.css' %}" />
-    <link rel="stylesheet" href="{% static 'frontpage/clock-style.css' %}" />
-    <title>JavaScript clock with background gradient • refaktor.dev 👋</title>
-  </head>
+            gtag('config', 'UA-152031613-1');
+        </script>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="description"
+            content="Digital clock made in JavaScript that changes the background of the page. Web App development with Django and Python."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            href="{% static 'frontpage/icons/refaktor.svg' %}"
+            sizes="any"
+            type="image/svg+xml"
+        />
+        <link rel="canonical" href="https://refaktor.dev/" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="stylesheet" href="{% static 'frontpage/mystyle.css' %}" />
+        <link rel="stylesheet" href="{% static 'frontpage/clock-style.css' %}" />
+        <title>JavaScript clock with background gradient • refaktor.dev 👋</title>
+    </head>
 
-  <body>
-    <a class="btn-floating btn-large home-icon" href="{% url 'frontpage:home' %}"
-      ><i class="material-icons">home</i></a
-    >
-    <div class="clock-container">
-      <h1>⏰</h1>
-      <p>The background of this page updates every second</p>
-      <p>background-image: linear-gradient(45deg, #HHMMSS, #SSMMHH)</p>
-      <div class="clock"></div>
-    </div>
-    <script src="{% static 'frontpage/js/clock.js' %}"></script>
-  </body>
+    <body>
+        <a class="btn-floating btn-large home-icon" href="{% url 'frontpage:home' %}"
+            ><i class="material-icons">home</i></a
+        >
+        <div class="clock-container">
+            <h1>⏰</h1>
+            <p>The background of this page updates every second</p>
+            <p>background-image: linear-gradient(45deg, #HHMMSS, #SSMMHH)</p>
+            <div class="clock"></div>
+        </div>
+        <script src="{% static 'frontpage/js/clock.js' %}"></script>
+    </body>
 </html>
