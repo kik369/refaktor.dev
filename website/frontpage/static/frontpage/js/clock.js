@@ -1,14 +1,14 @@
 const clock = document.querySelector('.clock');
 const body = document.querySelector('body');
 
-function addZero(time) {
+const addZero = time => {
     if (time < 10) {
         time = '0' + time;
     }
     return time;
-}
+};
 
-setInterval(() => {
+const updateClock = () => {
     let now = new Date();
     let hour = addZero(now.getHours());
     let minute = addZero(now.getMinutes());
@@ -21,4 +21,8 @@ setInterval(() => {
     body.style.backgroundImage = `linear-gradient(45deg, rgba(${hour_col}, ${minute_col}, ${second_col}, 0.75), rgba(${second_col}, ${minute_col}, ${hour_col}, 0.75))`;
 
     clock.innerHTML = `${hour}:${minute}:${second}`;
-}, 1000);
+};
+
+updateClock();
+
+setInterval(updateClock, 1000);
