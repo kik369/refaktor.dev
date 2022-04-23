@@ -26,3 +26,6 @@ def robots(request):
 
 class SitemapView(generic.TemplateView):
     template_name = 'frontpage/sitemap.xml'
+
+class BgView(generic.TemplateView):
+    template_name = 'frontpage/bg.html'

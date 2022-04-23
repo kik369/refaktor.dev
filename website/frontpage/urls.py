@@ -25,4 +25,5 @@ urlpatterns = [
     path('quadratic', views.QuadraticView.as_view(), name='quadratic'),
     path('robots.txt', views.robots, name='robots'),
     path('sitemap.xml', views.SitemapView.as_view(), name='sitemap'),
+    path('bg', views.BgView.as_view(), name='bg'),
 ]
