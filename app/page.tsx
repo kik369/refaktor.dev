@@ -5,10 +5,14 @@ import {
   AnnouncementTitle,
 } from "@/components/kibo/announcement";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Home() {
   return (
     <main className="mx-auto max-w-3xl p-6">
+      <div className="mb-6 flex justify-end">
+        <ThemeToggle />
+      </div>
       <Announcement>
         <AnnouncementTag>Now live</AnnouncementTag>
         <AnnouncementTitle>
